@@ -11,10 +11,10 @@ from tensorflow.keras.layers import Rescaling
 IMG_SIZE = 380
 BATCH_SIZE = 32
 # REPLACE THIS WITH THE PATH TO YOUR TEST/VALIDATION FOLDER
-TEST_DATA_DIR = "/path/to/your/dataset/test" 
+TEST_DATA_DIR = "SkinDisease3/SkinDisease3/test" 
 
 # --- LOAD METADATA ---
-df_lookup = pd.read_csv("Skin_Disease_Metadata.csv").sort_values(by="label")
+df_lookup = pd.read_csv("SkinDisease3/SkinDisease3/Skin_Disease_Metadata.csv").sort_values(by="label")
 SYMPTOM_COL = df_lookup.columns.tolist()[1:]
 NUM_SYMPTOMS = len(SYMPTOM_COL)
 NUM_CLASSES = len(df_lookup)
