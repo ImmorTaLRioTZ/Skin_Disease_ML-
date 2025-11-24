@@ -40,7 +40,7 @@ graph TD
     E --> F[Dense Layer 512]
     F --> G[Dense Layer 256]
     G --> H[Output Softmax (27 Classes)]
-```
+
 ***Project Structure:***
 
 Skin_Disease_ML/
