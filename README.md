@@ -31,7 +31,7 @@ The model is trained on the **Skin Disease Dataset** from Kaggle, which includes
 
 The architecture handles two distinct data types:
 
-```mermaid
+```
 graph TD
     A[Input: Image (380x380x3)] -->|EfficientNetB4| B[Global Avg Pooling]
     C[Input: Symptoms (Vector of 17)] -->|Dense Layers| D[Feature Extraction]
