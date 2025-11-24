@@ -1,0 +1,28 @@
+label,symptom_is_itchy,symptom_is_painful,symptom_is_asymptomatic,symptom_is_scaly,symptom_is_raised,symptom_has_blisters,symptom_is_oozing,symptom_is_bleeding,symptom_is_chronic,symptom_is_new_or_changing,symptom_loc_face,symptom_loc_torso,symptom_loc_arms_legs,symptom_loc_hands_feet,symptom_loc_genital_oral,symptom_loc_widespread,symptom_loc_single_lesion
+Acne or Rosacea,0,1,0,0,1,0,1,0,1,0,1,0,0,0,0,0,0
+Actinic Keratoses,0,0,1,1,1,0,0,0,1,1,1,0,1,1,0,0,0
+Atopic Dermatitis,1,0,0,1,0,0,1,0,1,0,1,0,1,1,0,1,0
+Basal cell carcinoma,0,0,1,0,1,0,0,1,1,1,1,0,0,0,0,0,1
+Benign keratosis-like lesions,0,0,1,1,1,0,0,0,1,0,1,1,1,0,0,0,0
+Chickenpox,1,0,0,0,1,1,1,0,0,0,1,1,1,1,0,1,0
+Cowpox,1,0,0,0,1,1,1,0,0,0,0,0,1,1,0,0,0
+Dermatofibroma,0,0,1,0,1,0,0,0,1,0,0,0,1,0,0,0,1
+Eczema,1,0,0,1,0,0,1,0,1,0,1,0,1,1,0,1,0
+HFMD,0,1,0,0,1,1,1,0,0,0,0,0,0,1,1,0,0
+Healthy,0,0,1,0,0,0,0,0,0,0,0,0,0,0,0,0,0
+Herpes HPV and other STDs,0,1,0,0,1,1,1,0,0,1,0,0,0,1,1,0,0
+Lupus,0,0,0,1,0,0,0,0,1,0,1,0,1,1,0,0,0
+Lyme Disease,0,0,0,0,0,0,0,0,0,0,0,1,1,0,0,0,1
+Measles,1,0,0,0,0,0,0,0,0,0,1,1,1,0,0,1,0
+Melanocytic nevi,0,0,1,0,1,0,0,0,1,0,1,1,1,1,0,0,0
+Melanoma,0,0,1,0,1,0,0,1,1,1,0,1,1,0,0,0,1
+Monkeypox,1,1,0,0,1,1,1,0,0,0,1,1,1,1,1,1,0
+Psoriasis Lichen Planus and related diseases,1,0,0,1,1,0,0,0,1,0,1,1,1,1,0,0,0
+Scabies,1,0,0,0,1,0,0,0,0,0,0,0,0,1,1,1,0
+Seborrheic Keratoses and other Benign Tumors,0,0,1,1,1,0,0,0,1,0,1,1,1,0,0,0,0
+Squamous cell carcinoma,0,0,1,1,1,0,0,1,1,1,1,0,1,1,0,0,1
+Tinea Ringworm Candidiasis and other Fungal Infections,1,0,0,1,0,0,0,0,0,0,0,1,1,1,1,0,0
+Urticaria Hives,1,0,0,0,1,0,0,0,0,0,0,1,1,0,0,1,0
+Vascular Lesions or Vascular Tumors,0,0,1,0,1,0,0,0,1,0,1,1,1,1,0,0,0
+Vitiligo,0,0,1,0,0,0,0,0,1,0,1,1,1,1,0,1,0
+Warts Molluscum and other Viral Infections,0,0,1,0,1,0,0,0,1,0,0,0,1,1,1,0,0

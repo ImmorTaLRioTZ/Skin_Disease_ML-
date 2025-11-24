@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Analysis Result</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body class="bg-dark d-flex align-items-center justify-content-center" style="height: 100vh;">
+
+<div class="card text-center shadow-lg" style="width: 24rem;">
+    <div class="card-header bg-success text-white">
+        Analysis Complete
+    </div>
+    <div class="card-body">
+        <h5 class="card-title text-muted">Predicted Condition</h5>
+        <h2 class="card-text text-primary display-4 fw-bold">{{ prediction }}</h2>
+        <hr>
+        <p class="card-text">
+            Confidence Score: <br>
+            <span class="badge bg-warning text-dark fs-4">{{ confidence }}%</span>
+        </p>
+        <a href="/" class="btn btn-outline-dark mt-3">Check Another Case</a>
+    </div>
+</div>
+
+</body>
+</html>
