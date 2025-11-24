@@ -55,7 +55,7 @@ Skin_Disease_ML/
     ├── index.html             # User input form (Image upload + Symptom checklist)
     └── result.html            # Prediction results page
 
-
+```
 ***Installation Guide:***
 Clone the repository:
 git clone [https://github.com/ImmorTaLRioTZ/Skin_Disease_ML-](https://github.com/ImmorTaLRioTZ/Skin_Disease_ML-)
