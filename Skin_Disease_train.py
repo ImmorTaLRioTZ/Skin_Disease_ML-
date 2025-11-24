@@ -15,7 +15,7 @@ batch_size = 32
 
 
 dataset_dir = 'SkinDisease3'
-df_lookup = pd.read_csv("Skin_Disease_Metadata.csv").sort_values(by="label")
+df_lookup = pd.read_csv("SkinDisease3/SkinDisease3/Skin_Disease_Metadata.csv").sort_values(by="label")
 SYMPTOM_COL = df_lookup.columns.tolist()[1:]
 NUM_SYMPTOMS = len(SYMPTOM_COL)
 NUM_CLASSES = len(df_lookup)
@@ -86,7 +86,7 @@ def lookup_symptoms_and_format(image, label_id):
   return ((image, symptom_vector), label_one_hot)
 
 train_ds = tf.keras.utils.image_dataset_from_directory(
-    "SkinDisease3/train",
+    "SkinDisease3/SkinDisease3/train",
     labels='inferred',
     label_mode='int',
     class_names=CLASS_NAMES,
@@ -109,7 +109,7 @@ def format_test_data(image, label_id):
 
 #validation dataset
 test_ds = tf.keras.utils.image_dataset_from_directory(
-    "SkinDisease3/test",
+    "SkinDisease3/SkinDisease3/test",
     labels='inferred',
     label_mode='int',
     class_names=CLASS_NAMES,
