@@ -61,10 +61,13 @@ Clone the repository:
 git clone [https://github.com/ImmorTaLRioTZ/Skin_Disease_ML-](https://github.com/ImmorTaLRioTZ/Skin_Disease_ML-)
 cd Skin_Disease_ML-
 
-Install dependencies:
+***Install dependencies:***
 pip install tensorflow pandas numpy scikit-learn flask pillow opencv-python matplotlib
 ***To train the model***
 python Skin_Disease_train.py
+
+***Install Weights separately in the same directory(if you want to skip the training overhead)***
+https://huggingface.co/ImmoRTaLRioTZ/Skin_Disease_ML_model/tree/main
 
 ***Running the model in a clean UI:***
 python app.py
