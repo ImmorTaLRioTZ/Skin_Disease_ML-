@@ -63,6 +63,7 @@ cd Skin_Disease_ML-
 
 ***Install dependencies:***
 pip install tensorflow pandas numpy scikit-learn flask pillow opencv-python matplotlib
+
 ***To train the model***
 python Skin_Disease_train.py
 
