@@ -26,15 +26,31 @@ CLASS_NAMES = ['Acne or Rosacea', 'Actinic Keratoses', 'Atopic Dermatitis', 'Bas
 
 # --- 2. BUILD MODEL FUNCTION (The fix we created) ---
 def build_model():
+
     # Base
     efficientnet_base = EfficientNetB4(weights=None, include_top=False, input_shape=(IMG_SIZE, IMG_SIZE, 3))
     efficientnet_base.trainable = False
 
+    # Augmentation Block
+
+    aug_and_rescale_block = tf.keras.Sequential([
+    layers.RandomFlip("horizontal_and_vertical"),
+    layers.RandomZoom(height_factor=0.2, width_factor=0.2),
+    layers.RandomTranslation(height_factor=0.1, width_factor=0.1),
+    layers.RandomBrightness(factor=0.2),
+    layers.RandomContrast(factor=0.2),
+    layers.RandomSaturation(factor=0.2),
+    layers.RandomHue(factor=0.1),
+    layers.RandomRotation(0.1),
+    #layers.GaussianBlur(3, sigma = 0.7),
+    layers.Rescaling(1./255)], name = "augmentation_and_rescaling")
+    
     # Inputs
     inputs = Input(shape=(IMG_SIZE, IMG_SIZE, 3))
     symptom_input = Input(shape=(len(SYMPTOM_LIST),), name="symptom_input")
 
     # Image Branch
+    x = aug_and_rescale_block(inputs)
     x = efficientnet_base(inputs)
     x = layers.GlobalAveragePooling2D(name="image_pooling")(x)
     x = layers.Dropout(0.2, name="top_dropout")(x)
